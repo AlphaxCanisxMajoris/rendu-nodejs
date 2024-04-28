@@ -1,0 +1,444 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'garet', sans-serif;
+}
+
+.body
+{
+background-color: #ffffff;
+color: #1d2151;
+min-height: 200vh;
+}
+/*couleurs de base du body et taille*/
+.dark-mode {
+    background-color: #1d2151;
+    color: white;
+}
+
+/*changement de couleur par dark mode*/
+
+
+header
+{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+    height: 80px;
+}
+header.sticky
+{
+    padding: 5px 100px;
+    background: #1d21517f;
+}
+
+header #logo
+{
+position: relative;
+font-weight: 700;
+text-decoration: none;
+font-size: 2em;
+text-transform: uppercase;
+letter-spacing: 2px;
+transition: 0.6s;
+}
+
+.logo
+{
+        width: 160px;
+        height: auto;
+}
+
+header ul
+{
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: left;
+font-weight: bold;
+}
+
+header ul li
+{
+    position: relative;
+list-style: none;
+}
+
+header ul li a
+{
+    position: relative;
+    margin: 0 15px;
+text-decoration: none;
+color: #ffffff;
+letter-spacing: 2px;
+font-weight: 500px;
+transition: 0.6s;
+}
+/*position, taille et couleurs du header
+*/
+
+.banner
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(harry-potter-game-1920-x-1080-wallpaper-ayl3fc3v6c2zn3f4.jpg);
+    background-size: cover;
+}
+/*bannière image de la page
+*/
+
+header.sticky ul li a
+{
+color: #ffffff;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul 
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li
+{
+    margin-right: 0; 
+}
+
+nav form {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.language-icon {
+    width: 35px;
+    height: auto;
+    vertical-align: middle;
+}
+
+
+.boxContainer
+{
+    margin:auto;
+    margin-top: 20%;
+    position:relative;
+    width: 300px;
+    height: 42px;
+    border: 4px solid #000000;
+    padding: 0px 10px;
+    border-radius: 50px;
+}
+
+.elementsContainer
+{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.search
+{
+border: none;
+    height: 100%;
+    width: 100%;
+    padding: 0px 5px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-family: "Nunito";
+    color: #000000;
+    font-weight: 500;
+    width: 150px;
+    height: 30px;
+}
+.search:focus
+{
+    outline: none;
+}
+
+.material-icons
+{
+    font-size: 26;
+    color: #ffffff;
+}
+
+.recherche-icon
+{
+  height: auto;
+    width: 35px;
+    margin-right: 50px;
+}
+
+.icon-mode
+{
+  height: auto;
+    width: 35px;
+    margin-right: 50px;
+}
+
+/*position et couleurs des éléments dans la barre de navigation*/
+
+.bouton {
+    bottom: 20px;
+    right: 20px;
+    font-family: 'garet', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    position: absolute;
+    display: flex;
+    font-size: 45px;
+    margin: 50px 50px;
+    padding: 50px;
+    border-radius: 5px;
+    background-color: #1d215179;
+}
+/*position et couleurs du bouton sur la bannière*/
+
+.h1
+{font-weight: bold;
+font-size: 70px;
+}
+
+.bienvenue
+{
+    text-align: center;
+}
+
+/*texte*/
+
+.décoration
+{
+width: 300px;
+height: 200px;
+}
+
+.image-deco {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p
+{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+    font-size: 25px;
+}
+
+.h2
+{font-weight: bold;
+font-size: 40px;
+font-family: 'garet', sans-serif;
+text-align: center;
+}
+
+/*texte*/
+
+footer{
+    background-color: #1d2151;
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+    display: flex;
+}
+
+.socialIcons{
+display: flex;
+justify-content: center;
+}
+
+.socialIcons img {
+    width: 75px;
+    height: auto;
+}
+
+
+.socialIcons a{
+text-decoration: none;
+padding: 10px;
+background-color: #ffffff;
+margin: 10px;
+border-radius: 50%;
+}
+
+.socialIcons a i{
+font-size: 0.5em;
+color: #000000;
+opacity: 0.9;
+}
+
+.socialIcons a:hover{
+background-color: #000000;
+transition: 0.5s;
+}
+
+.socialIcons a:hover i{
+    color: #ffffff;
+}
+
+.footernav {
+margin: 30px 0;
+}
+
+.footernav ul{
+display: flex;
+justify-content: center;
+list-style-type: none;
+}
+
+.footernav ul li a{
+color: rgb(161, 161, 161);
+margin: 20px;
+text-decoration: none;
+font-size: 1.3em;
+opacity: 0.7;
+transition: 0.5s;
+}
+
+.footernav ul li a:hover{
+opacity: 1;
+}
+
+.footerBottom {
+background-color: #1d2151;
+padding: 20px
+}
+
+.footerBottom p{
+    color: #ffffff;
+}
+
+body {
+    position: relative;
+    height: 100%;
+  }
+
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+
+  .titres
+  {
+    padding-bottom: 2%;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+.designer
+{
+   opacity: 0.7;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   font-weight: 400;
+   margin: 0px 5px;
+    }
+/*footer*/
+    @media (max-width: 700px)
+    {
+        .footerNav ul{
+            flex-direction: column;
+        }
+        .footernav ul li{
+width: 100%;
+margin: 10px;
+
+}
+
+    @media (max-width: 1100px) {
+        .logo {
+            display: block;
+            margin: auto;
+        }
+
+
+   
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
+
+
+        @media (max-width: 1100px) {
+            .footerContainer {
+                padding: 10px;
+            }
+        
+            .footernav ul li a {
+                font-size: 15px;
+                margin: 5px 20px;
+            }
+        
+            .socialIcons a img {
+                width: 50px;
+                height: 50px;
+            }
+        
+            .footerBottom {
+                height: 50px;
+            }
+        }
+        
+       
+        @media (prefers-color-scheme: dark) {
+            body { background: #333; color: white; }
+          }
+          
+          @media (prefers-color-scheme: light) {
+            body { background: #ddd; color: black; }
+          }}
+
+          /*footer responsive*/

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="agent.js"></script>
+  </head>
+  <body>
+    <h1>List of agents</h1>
+    <div id="agents"></div>
+    <form>
+      <input type="text" name="agent" />
+
+      <button type="button" onclick="sendAgent()">Send agent</button>
+    </form>
+
+    <form>
+      <input type="text" name="agent" />
+      <button type="button" onclick="updateAgent()">updateAgent</button>
+    </form>
+
+    <a href="index.html?od=${fate.id}">Rename</a>
+    <button onclick="deleteAgent()">Delete</button>
+
+    <script>
+      fetch("http://localhost:3000/agents")
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("erreur");
+          }
+          return response.json();
+        })
+        .then((agents) => {
+          const agentsDiv = document.getElementById("agents");
+          agents.forEach((agent) => {
+            const agentElement = document.createElement("div");
+            agentElement.textContent = agent.name;
+            agentsDiv.appendChild(agentElement);
+          });
+        })
+        .catch((error) => {
+          console.error("Erreur:", error);
+          const agentsDiv = document.getElementById("agents");
+          agentsDiv.textContent = "Erreur lors du chargement des agents";
+        });
+    </script>
+  </body>
+</html>
